@@ -1,0 +1,222 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'jslint' ]
+2 info using npm@2.15.9
+3 info using node@v4.6.0
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'jslint', null ]
+7 verbose cache add spec jslint
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'jslint',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'jslint',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: 'latest',
+8 silly cache add   type: 'tag' }
+9 silly addNamed jslint@latest
+10 verbose addNamed "latest" is being treated as a dist-tag for jslint
+11 info addNameTag [ 'jslint', 'latest' ]
+12 silly mapToRegistry name jslint
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry data Result {
+15 silly mapToRegistry   raw: 'jslint',
+15 silly mapToRegistry   scope: null,
+15 silly mapToRegistry   name: 'jslint',
+15 silly mapToRegistry   rawSpec: '',
+15 silly mapToRegistry   spec: 'latest',
+15 silly mapToRegistry   type: 'tag' }
+16 silly mapToRegistry uri https://registry.npmjs.org/jslint
+17 verbose addNameTag registry:https://registry.npmjs.org/jslint not in flight; fetching
+18 verbose request uri https://registry.npmjs.org/jslint
+19 verbose request no auth needed
+20 info attempt registry request try #1 at 2:49:46 PM
+21 verbose request id 9ecd7c91151d9694
+22 verbose etag "17E2X3LFBMPYCNN33933BTJH2"
+23 http request GET https://registry.npmjs.org/jslint
+24 http 304 https://registry.npmjs.org/jslint
+25 verbose headers { date: 'Mon, 17 Oct 2016 20:49:47 GMT',
+25 verbose headers   via: '1.1 varnish',
+25 verbose headers   'cache-control': 'max-age=300',
+25 verbose headers   etag: '"17E2X3LFBMPYCNN33933BTJH2"',
+25 verbose headers   age: '44',
+25 verbose headers   connection: 'keep-alive',
+25 verbose headers   'x-served-by': 'cache-ord1733-ORD',
+25 verbose headers   'x-cache': 'HIT',
+25 verbose headers   'x-cache-hits': '2',
+25 verbose headers   'x-timer': 'S1476737387.109278,VS0,VE0',
+25 verbose headers   vary: 'Accept-Encoding' }
+26 silly get cb [ 304,
+26 silly get   { date: 'Mon, 17 Oct 2016 20:49:47 GMT',
+26 silly get     via: '1.1 varnish',
+26 silly get     'cache-control': 'max-age=300',
+26 silly get     etag: '"17E2X3LFBMPYCNN33933BTJH2"',
+26 silly get     age: '44',
+26 silly get     connection: 'keep-alive',
+26 silly get     'x-served-by': 'cache-ord1733-ORD',
+26 silly get     'x-cache': 'HIT',
+26 silly get     'x-cache-hits': '2',
+26 silly get     'x-timer': 'S1476737387.109278,VS0,VE0',
+26 silly get     vary: 'Accept-Encoding' } ]
+27 verbose etag https://registry.npmjs.org/jslint from cache
+28 verbose get saving jslint to /Users/rachaelharlow/.npm/registry.npmjs.org/jslint/.cache.json
+29 verbose correctMkdir /Users/rachaelharlow/.npm correctMkdir not in flight; initializing
+30 silly addNameTag next cb for jslint with tag latest
+31 silly addNamed jslint@0.10.3
+32 verbose addNamed "0.10.3" is a plain semver version for jslint
+33 silly cache afterAdd jslint@0.10.3
+34 verbose afterAdd /Users/rachaelharlow/.npm/jslint/0.10.3/package/package.json not in flight; writing
+35 verbose correctMkdir /Users/rachaelharlow/.npm correctMkdir not in flight; initializing
+36 verbose afterAdd /Users/rachaelharlow/.npm/jslint/0.10.3/package/package.json written
+37 silly install resolved [ { name: 'jslint',
+37 silly install resolved     description: 'The JavaScript Code Quality Tool',
+37 silly install resolved     homepage: 'https://github.com/reid/node-jslint',
+37 silly install resolved     keywords:
+37 silly install resolved      [ 'lint',
+37 silly install resolved        'jslint',
+37 silly install resolved        'code-quality',
+37 silly install resolved        'static-analysis',
+37 silly install resolved        'jshint',
+37 silly install resolved        'eslint' ],
+37 silly install resolved     version: '0.10.3',
+37 silly install resolved     author: { name: 'Reid Burke', email: 'me@reidburke.com' },
+37 silly install resolved     contributors:
+37 silly install resolved      [ [Object],
+37 silly install resolved        [Object],
+37 silly install resolved        [Object],
+37 silly install resolved        [Object],
+37 silly install resolved        [Object],
+37 silly install resolved        [Object],
+37 silly install resolved        [Object],
+37 silly install resolved        [Object],
+37 silly install resolved        [Object],
+37 silly install resolved        [Object],
+37 silly install resolved        [Object],
+37 silly install resolved        [Object],
+37 silly install resolved        [Object],
+37 silly install resolved        [Object],
+37 silly install resolved        [Object] ],
+37 silly install resolved     bin: { jslint: './bin/jslint.js' },
+37 silly install resolved     main: './lib/nodelint.js',
+37 silly install resolved     dependencies:
+37 silly install resolved      { exit: '~0.1.2',
+37 silly install resolved        glob: '^7.0.3',
+37 silly install resolved        nopt: '~3.0.1',
+37 silly install resolved        'readable-stream': '~2.1.2' },
+37 silly install resolved     devDependencies:
+37 silly install resolved      { 'fs.extra': '^1.3.2',
+37 silly install resolved        istanbul: '^0.4.3',
+37 silly install resolved        'marked-man': '~0.1.5',
+37 silly install resolved        mocha: '^3.0.0' },
+37 silly install resolved     engines: { node: '>=0.8.0' },
+37 silly install resolved     files:
+37 silly install resolved      [ 'man/jslint.1',
+37 silly install resolved        'doc/jslint.md',
+37 silly install resolved        'doc/jslint.html',
+37 silly install resolved        'lib',
+37 silly install resolved        'bin',
+37 silly install resolved        'jslint.conf.example',
+37 silly install resolved        'Makefile' ],
+37 silly install resolved     directories: { lib: './lib', man: './man', doc: './doc' },
+37 silly install resolved     man: [ 'man/jslint.1' ],
+37 silly install resolved     repository: { type: 'git', url: 'git://github.com/reid/node-jslint.git' },
+37 silly install resolved     bugs: { url: 'https://github.com/reid/node-jslint/issues' },
+37 silly install resolved     license: 'BSD-3-Clause',
+37 silly install resolved     licenses: [ [Object] ],
+37 silly install resolved     scripts: { test: 'make test', mypublish: 'make prepublish; npm publish' },
+37 silly install resolved     gitHead: 'c2cdb60176983c5e4e93aebbcba1d8c2c93ac416',
+37 silly install resolved     _id: 'jslint@0.10.3',
+37 silly install resolved     _shasum: '890da3e79932edf06c5f4b52a7b5ba6436867436',
+37 silly install resolved     _from: 'jslint@latest',
+37 silly install resolved     _npmVersion: '3.9.5',
+37 silly install resolved     _nodeVersion: '6.2.2',
+37 silly install resolved     _npmUser: { name: 'smikes', email: 'smikes@cubane.com' },
+37 silly install resolved     dist:
+37 silly install resolved      { shasum: '890da3e79932edf06c5f4b52a7b5ba6436867436',
+37 silly install resolved        tarball: 'https://registry.npmjs.org/jslint/-/jslint-0.10.3.tgz' },
+37 silly install resolved     maintainers: [ [Object], [Object], [Object] ],
+37 silly install resolved     _npmOperationalInternal:
+37 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+37 silly install resolved        tmp: 'tmp/jslint-0.10.3.tgz_1470191637945_0.5465514140669256' },
+37 silly install resolved     _resolved: 'https://registry.npmjs.org/jslint/-/jslint-0.10.3.tgz',
+37 silly install resolved     readme: 'ERROR: No README data found!' } ]
+38 info install jslint@0.10.3 into /usr/local/lib
+39 info installOne jslint@0.10.3
+40 verbose installOne of jslint to /usr/local/lib not in flight; installing
+41 verbose correctMkdir /Users/rachaelharlow/.npm/_locks correctMkdir not in flight; initializing
+42 verbose lock using /Users/rachaelharlow/.npm/_locks/jslint-e65d94138d09eaa4.lock for /usr/local/lib/node_modules/jslint
+43 silly install write writing jslint 0.10.3 to /usr/local/lib/node_modules/jslint
+44 verbose unbuild lib/node_modules/jslint
+45 info preuninstall jslint@0.10.3
+46 info uninstall jslint@0.10.3
+47 verbose unbuild rmStuff jslint@0.10.3 from /usr/local/lib/node_modules
+48 silly gentlyRm /usr/local/bin/jslint is being gently removed
+49 silly gentlyRm verifying /usr/local is an npm working directory
+50 verbose rmMans man files are [ 'man/jslint.1' ] in /usr/local/share/man
+51 silly rmMan preparing to remove man/jslint.1
+52 silly gentlyRm /usr/local/share/man/man1/jslint.1.1 is being gently removed
+53 silly gentlyRm verifying /usr/local is an npm working directory
+54 silly gentlyRm containing path /usr/local is under npm's control, in /usr/local
+55 silly gentlyRm deletion target /usr/local/bin/jslint is under /usr/local
+56 verbose gentlyRm vacuuming from /usr/local/bin/jslint up to /usr/local
+57 silly gentlyRm containing path /usr/local is under npm's control, in /usr/local
+58 silly gentlyRm deletion target /usr/local/share/man/man1/jslint.1.1 is under /usr/local
+59 verbose gentlyRm vacuuming from /usr/local/share/man/man1/jslint.1.1 up to /usr/local
+60 silly vacuum-fs removing /usr/local/bin/jslint
+61 silly vacuum-fs quitting because other entries in /usr/local/bin
+62 info postuninstall jslint@0.10.3
+63 silly gentlyRm /usr/local/lib/node_modules/jslint is being purged from base /usr/local
+64 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/jslint
+65 silly vacuum-fs purging /usr/local/lib/node_modules/jslint
+66 verbose unlock done using /Users/rachaelharlow/.npm/_locks/jslint-e65d94138d09eaa4.lock for /usr/local/lib/node_modules/jslint
+67 verbose stack Error: EACCES: permission denied, rmdir '/usr/local/lib/node_modules/jslint'
+67 verbose stack     at Error (native)
+68 verbose cwd /Users/rachaelharlow/MTCS/fullstackdogs
+69 error Darwin 16.0.0
+70 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "jslint"
+71 error node v4.6.0
+72 error npm  v2.15.9
+73 error path /usr/local/lib/node_modules/jslint
+74 error code EACCES
+75 error errno -13
+76 error syscall rmdir
+77 error Error: EACCES: permission denied, rmdir '/usr/local/lib/node_modules/jslint'
+77 error     at Error (native)
+77 error  { [Error: EACCES: permission denied, rmdir '/usr/local/lib/node_modules/jslint']
+77 error   errno: -13,
+77 error   code: 'EACCES',
+77 error   syscall: 'rmdir',
+77 error   path: '/usr/local/lib/node_modules/jslint' }
+78 error Please try running this command again as root/Administrator.
+79 verbose exit [ -13, true ]
+80 verbose unbuild lib/node_modules/jslint
+81 info preuninstall jslint@0.10.3
+82 info uninstall jslint@0.10.3
+83 verbose unbuild rmStuff jslint@0.10.3 from /usr/local/lib/node_modules
+84 silly gentlyRm /usr/local/bin/jslint is being gently removed
+85 silly gentlyRm verifying /usr/local is an npm working directory
+86 verbose rmMans man files are [ 'man/jslint.1' ] in /usr/local/share/man
+87 silly rmMan preparing to remove man/jslint.1
+88 silly gentlyRm /usr/local/share/man/man1/jslint.1.1 is being gently removed
+89 silly gentlyRm verifying /usr/local is an npm working directory
+90 silly gentlyRm containing path /usr/local is under npm's control, in /usr/local
+91 silly gentlyRm deletion target /usr/local/bin/jslint is under /usr/local
+92 verbose gentlyRm vacuuming from /usr/local/bin/jslint up to /usr/local
+93 silly gentlyRm containing path /usr/local is under npm's control, in /usr/local
+94 silly gentlyRm deletion target /usr/local/share/man/man1/jslint.1.1 is under /usr/local
+95 verbose gentlyRm vacuuming from /usr/local/share/man/man1/jslint.1.1 up to /usr/local
+96 info postuninstall jslint@0.10.3
+97 silly gentlyRm /usr/local/lib/node_modules/jslint is being purged from base /usr/local
+98 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/jslint
+99 silly vacuum-fs purging /usr/local/lib/node_modules/jslint
+100 error error rolling back Error: EACCES: permission denied, rmdir '/usr/local/lib/node_modules/jslint'
+100 error error rolling back     at Error (native)
+100 error error rolling back  { [Error: EACCES: permission denied, rmdir '/usr/local/lib/node_modules/jslint']
+100 error error rolling back   errno: -13,
+100 error error rolling back   code: 'EACCES',
+100 error error rolling back   syscall: 'rmdir',
+100 error error rolling back   path: '/usr/local/lib/node_modules/jslint' }

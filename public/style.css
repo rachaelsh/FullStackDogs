@@ -1,0 +1,28 @@
+body{
+  margin: 0;
+  background-size: cover;
+}
+
+h1{
+  margin-top: 30px;
+  margin-left: 80px;
+  margin-bottom: 0px;
+  font-size: 48px;
+}
+.container{
+  background-image: url(https://hd.unsplash.com/photo-1472057529714-3f679372f673);
+  background-size: cover;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Sanchez', serif;
+  font-size: 20px;
+}
+
+.dogstuff{
+  margin-left:30px;
+  background-color: rbga(245, 255, 255, 0.3);
+  width: 500px;
+  height: auto;
+  border: solid gray 4px;
+}

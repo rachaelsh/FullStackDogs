@@ -5,17 +5,23 @@ this.getDogs = function(){
     method: "GET",
     url: "/dogs"
   }).then(function(response){
+    console.log(response.data);
     return response.data;
   });
-//
-// this.postDogs = function(){
-//   return $http({
-//     method: "POST",
-//     url: "/dogs"
-//   }).then(function(response){
-//     return response.data;
-//   });
-//
+};
+
+this.postDogs = function(response){
+  return $http({
+    method: "POST",
+    url: "/dogs"
+  }).then(function(response){
+    return response.data;
+  });
+};
+
+});
+// };
+
 //   this.putDogs = function(){
 //     return $http({
 //       method: "PUT",
@@ -34,14 +40,5 @@ this.getDogs = function(){
 //
 //
 //
-//       // return response.data;
+//       // return "deleted!";
 //     });
-
-};
-
-
-
-
-
-
-});
