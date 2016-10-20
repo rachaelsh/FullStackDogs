@@ -1,43 +1,39 @@
 angular.module("dogApp").controller("mainCtrl", function($scope, mainServ){
 
  // $scope.test="what";
-$scope.getDogs = function(){
-  mainServ.getDogs()
-  .then(function(response){
-    $scope.dogList = response;
-    console.log(response);
-  });
-};
-$scope.getDogs();
+  $scope.getDogs = function(){
+    mainServ.getDogs()
+    .then(function(response){
+      $scope.dogList = response;
+      console.log(response);
+    });
+  };
 
-});
+  $scope.postDogs = function(newDog){
+    console.log(newDog);
+    mainServ.postDogs(newDog)
+    .then(function(response){
+      $scope.newDog.name = "";
+      $scope.newDog.breed = "";
+      $scope.getDogs();
+      console.log(response);
+    });
+  };
 
-// $scope.postDogs = function(){
-//   mainServ.postDogs()
-//   .then(function(response){
-//     $scope.dogList = response;
-//     console.log(response);
-//   });
-// };
-// $scope.postDogs();
-// });
+  $scope.putDogs = function(editDog){
+    mainServ.putDogs(editDog)
+    .then(function(response){
+      console.log(response);
+      $scope.getDogs();
+    });
+  };
 
-
-// $scope.putDogs = function(){
-//   mainServ.putDogs()
-//   .then(function(response){
-//     $scope.dogList = response;
-//     console.log(response);
-//   });
-// };
-// $scope.putDogs();
-// });
-// $scope.deleteDogs = function(){
-//   mainServ.postDogs()
-//   .then(function(response){
-//     $scope.dogList = response;
-//     console.log(response);
-//   });
-// };
-// $scope.deleteDogs();
-// });
+  $scope.deleteDogs = function(goneDog){
+    console.log("main")
+    mainServ.deleteDogs(goneDog)
+    .then(function(response){
+      $scope.getDogs();
+      console.log(response);
+    });
+  };
+});//end controller. Keep at bottom

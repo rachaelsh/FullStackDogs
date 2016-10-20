@@ -10,35 +10,36 @@ this.getDogs = function(){
   });
 };
 
-this.postDogs = function(response){
+this.postDogs = function(newDog){
+  console.log(newDog);
   return $http({
     method: "POST",
-    url: "/dogs"
+    url: "/dogs",
+    data: newDog
   }).then(function(response){
-    return response.data;
+    console.log(response.data);
+    return response;
   });
 };
 
-});
-// };
+  this.putDogs = function(editDog){
+    return $http({
+      method: "PUT",
+      url: "/dogs/" + editDog.key,
+      data: editDog
+    }).then(function(response){
+      return response;
+    });
+  };
 
-//   this.putDogs = function(){
-//     return $http({
-//       method: "PUT",
-//       url: "/dogs/:id"
-//     }).then(function(response){
-//
-//
-//       return response.data;
-//     });
-//
-//   this.deleteDogs = function(){
-//     return $http({
-//       method: "DELETE",
-//       url: "/dogs/:id"
-//     }).then(function(response){
-//
-//
-//
-//       // return "deleted!";
-//     });
+  this.deleteDogs = function(goneDog){
+    return $http({
+      method: "DELETE",
+      url: "/dogs/" + goneDog.key
+    }).then(function(response){
+            console.log(goneDog);
+      return response;
+    });
+  };
+
+});//ends service - keep at bottom

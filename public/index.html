@@ -1,26 +1,33 @@
 <!DOCTYPE html>
 <html ng-app="dogApp">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Dogs Database</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Sanchez" rel="stylesheet">
-  </head>
-  <body ng-controller="mainCtrl">
-     <div class="container">
-       <h1>Fetch.</h1>
+</head>
 
-<div class="dogstuff">
-           <h3>Sort By: <button type="button" ng-click="thing='+description'">Asc</button><button type="button" ng-click="thing='-description'">Dec</button>
-           <input type="text" ng-model="filterer" placeholder="Filter By...">
-
+<body ng-controller="mainCtrl">
+    <div class="container">
+        <h1>Fetch.</h1>
+        <div class="dogstuff">
+            <div class="whistle"><button type="button" ng-click="getDogs()">*whistle*</button></div>
+            <h3>Sort By: <button type="button" ng-click="thing='+name'">Name</button><button type="button" ng-click="thing='+breed'">Breed</button>
+              <br/>
+           <input type="text" ng-model="filterer" placeholder="Filter By..."/>
+              <br>
            <div>
-                  <form ng-submit="postDogs(newdog)">
-                        <input ng-model="newdog" placeholder="Tell me about your dog">
-                      </form>
-                    </div>
-<div ng-repeat="item in dogList | orderBy: thing | filter: filterer">{{item.name}}, {{item.breed}}</div>
+              <form ng-submit="postDogs(newDog)">
+                <input type="text" ng-model="newDog.name" placeholder="Dog's name?"/>
+                <input type="text" ng-model="newDog.breed" placeholder="Dog's breed?"/>
+                <input type="submit">
+              </form>
+            </div>
+
+
+<div ng-repeat="item in dogList | orderBy: thing | filter: filterer">{{item.name}}, {{item.breed}}          <button type="button" ng-hide="readyToUpdate" ng-click="deleteDogs(goneDog)">Shoo!</button></div>
 </div>
 </div>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
